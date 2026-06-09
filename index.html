@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="splash-active">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- FULL-SCREEN SPLASH -->
+  <div id="splash" aria-hidden="true">
+    <div class="splash-glow"></div>
+    <div class="splash-inner">
+      <svg class="splash-logo" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Victor">
+        <defs>
+          <linearGradient id="si" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#818cf8"/>
+            <stop offset="100%" stop-color="#22d3ee"/>
+          </linearGradient>
+          <linearGradient id="st" x1="82" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#818cf8"/>
+            <stop offset="100%" stop-color="#22d3ee"/>
+          </linearGradient>
+          <filter id="sg" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <rect x="10" y="10" width="60" height="60" rx="16" fill="url(#si)" fill-opacity="0.14"/>
+        <rect x="10" y="10" width="60" height="60" rx="16" fill="none" stroke="url(#si)" stroke-width="1.5" opacity="0.55"/>
+        <path d="M21 22 L40 56 L59 22" fill="none" stroke="url(#si)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#sg)" opacity="0.6"/>
+        <path d="M21 22 L40 56 L59 22" fill="none" stroke="url(#si)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="84" y="51" font-family="Syne,'Segoe UI',system-ui,sans-serif" font-weight="800" font-size="34" letter-spacing="-0.8" fill="url(#st)">Victor</text>
+        <circle cx="305" cy="50" r="4" fill="#22d3ee" opacity="0.85"/>
+      </svg>
+      <p class="splash-tagline">Frontend Developer &amp; UX/UI Designer</p>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <a href="#home" class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="lm" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stop-color="#818cf8"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="8" fill="url(#lm)" fill-opacity="0.18"/>
+          <rect width="32" height="32" rx="8" fill="none" stroke="url(#lm)" stroke-width="1.2" opacity="0.5"/>
+          <path d="M8 9 L16 23 L24 9" fill="none" stroke="url(#lm)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Victor
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&#10005;</button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="mailto:simplykae2@gmail.com" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-orb orb-1" aria-hidden="true"></div>
+      <div class="hero-orb orb-2" aria-hidden="true"></div>
+      <div class="hero-orb orb-3" aria-hidden="true"></div>
+      <p class="eyebrow">Available for work</p>
+      <h1>Hi, I'm Victor</h1>
+      <p class="hero-role" data-text="Frontend Developer &amp; UX/UI Designer"></p>
+      <p class="hero-desc">I build digital products that load in seconds, sell in minutes, and stay out of their own way — for startups, e-commerce brands, and SaaS teams who don't have time to wait for "perfect."</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary ripple">View My Work</a>
+        <a href="#contact" class="btn btn-outline ripple">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div id="about-stripe">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-layout">
+        <div class="about-text">
+          <p class="reveal" data-delay="0">I'm a frontend developer and UX/UI designer who turns ideas into fast, clean, and conversion-focused digital products.</p>
+          <p class="reveal" data-delay="100">I work with startups, e-commerce brands, and SaaS teams — handling everything from initial design to final deployment so you get a finished product, not a handoff headache.</p>
+          <p class="reveal" data-delay="200">When I'm not building, I'm studying what makes interfaces tick — from typography to interaction patterns — so every pixel earns its place.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat reveal" data-delay="0">
+            <span class="stat-number" data-target="20" data-suffix="+">0</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat reveal" data-delay="120">
+            <span class="stat-number" data-target="2" data-suffix="+">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat reveal" data-delay="240">
+            <span class="stat-number" data-target="99" data-suffix=".9%">0</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>What I Do</h2>
+      <div class="grid">
+        <div class="card tilt reveal" data-delay="0">
+          <div class="icon">🌐</div>
+          <h3>Website Creation</h3>
+          <p>Responsive, modern sites built from scratch with clean code and fast load times.</p>
+        </div>
+        <div class="card tilt reveal" data-delay="100">
+          <div class="icon">🛒</div>
+          <h3>E-Commerce</h3>
+          <p>Online stores with carts, payments, and product management that convert visitors into buyers.</p>
+        </div>
+        <div class="card tilt reveal" data-delay="200">
+          <div class="icon">💻</div>
+          <h3>Software Development</h3>
+          <p>Custom applications tailored to your needs, built to scale as your business grows.</p>
+        </div>
+        <div class="card tilt reveal" data-delay="300">
+          <div class="icon">🎨</div>
+          <h3>UX / UI Design</h3>
+          <p>Intuitive, beautiful interfaces that look great and guide users toward action.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Featured Work</h2>
+      <div class="grid">
+
+        <div class="card tilt project-card reveal" data-delay="0">
+          <div class="project-tag">Education</div>
+          <h3>St Francis Girls Suwerwa</h3>
+          <p>A full secondary school website for SFG Suwerwa-Kitale featuring academics, admissions, notice board, and a hero slideshow.</p>
+          <div class="project-links">
+            <a href="projects/sfg-suwerwa/highhome.html" target="_blank" rel="noopener" class="proj-btn">View Project →</a>
+          </div>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </div>
+
+        <div class="card tilt project-card reveal" data-delay="100">
+          <div class="project-tag">Education</div>
+          <h3>Nakuru KMTC Website</h3>
+          <p>A full college portal for Kenya Medical Training College — programs, admissions, news, and contact, with a hero slider and animated stats.</p>
+          <div class="project-links">
+            <a href="projects/nakuru-kmtc/index.html" target="_blank" rel="noopener" class="proj-btn">View Project →</a>
+          </div>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </div>
+
+        <div class="card tilt project-card reveal" data-delay="300">
+          <div class="project-tag">Business</div>
+          <h3>NakuruNest — BnB Platform</h3>
+          <p>A full-featured Bed &amp; Breakfast booking platform for Nakuru with property listings, search, destinations, and host sign-up.</p>
+          <div class="project-links">
+            <a href="projects/nakuru-nest/index.html" target="_blank" rel="noopener" class="proj-btn">View Project →</a>
+          </div>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </div>
+
+      </div>
+
+      <!-- GitHub CTA -->
+      <div class="github-cta reveal" data-delay="200">
+        <div class="github-cta-inner">
+          <div class="github-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div class="github-cta-text">
+            <h3>See More on GitHub</h3>
+            <p>These are just a few highlights. My GitHub has the full picture — source code, experiments, and projects still in progress. Each repo includes a README with context on the problem it solves and how it was built.</p>
+          </div>
+          <a href="https://github.com/vick45-dotner" class="btn github-btn ripple">
+            View All Projects
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-box reveal" data-delay="0">
+        <p class="contact-eyebrow">Let's work together</p>
+        <h2>Have a project in mind?</h2>
+        <p class="contact-desc">I'm currently available for freelance work. If you have a project that needs a designer and developer, I'd love to hear about it.</p>
+        <a href="mailto:simplykae2@gmail.com" class="btn btn-cta ripple">Send Me an Email</a>
+        <p class="contact-email">or call / WhatsApp me at <a href="tel:+254757593161">+254 757 593 161</a></p>
+        <p class="contact-email" style="margin-top:.5rem">or email <a href="mailto:vkipkemboi45@gmail.com">vkipkemboi45@gmail.com</a></p>
+        <div class="social-links">
+          <a href="https://wa.me/254757593161" target="_blank" rel="noopener" class="social-link whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/mb01._v._?igsh=MWRpbXd4ajc3bjlrNQ==" target="_blank" rel="noopener" class="social-link instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@coushy?_r=1&_t=ZS-9746OSdr5FNtiktok" target="_blank" rel="noopener" class="social-link tiktok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.02a8.16 8.16 0 004.77 1.52V7.1a4.85 4.85 0 01-1-.41z"/></svg>
+            TikTok
+          </a>
+          <a href="https://x.com/Vincent33946658ner" class="social-link x-twitter" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X (Twitter)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Victor. Designed &amp; built by me.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

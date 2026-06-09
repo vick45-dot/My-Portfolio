@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NakuruNest — Find Your Perfect BnB Stay</title>
+  <meta name="description" content="Discover and book the best Bed & Breakfast accommodations in Nakuru and beyond. Nightly, weekly, monthly and yearly stays.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🏡</span>
+        NakuruNest
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Browse BnBs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="nav-cta">List Your BnB</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-outline btn-sm">Sign In</a>
+        <a href="#" class="btn btn-primary btn-sm">Join Free</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Browse BnBs</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">List Your BnB</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <a href="#" class="btn btn-outline btn-full">Sign In</a>
+      <a href="#" class="btn btn-primary btn-full">Join Free</a>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-gradient"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">✦ Kenya's Favourite BnB Platform</div>
+          <h1 class="hero-title">Find Your Perfect <span>BnB Stay</span> in Nakuru</h1>
+          <p class="hero-subtitle">Discover handpicked bed &amp; breakfast properties across Nakuru, Naivasha, and the Rift Valley. Book nightly, weekly, monthly or yearly.</p>
+
+          <form id="heroSearchForm">
+            <div class="search-box">
+              <div class="search-field">
+                <label for="searchLocation">Location</label>
+                <input type="text" id="searchLocation" placeholder="Nakuru, Lake Nakuru, Naivasha…">
+              </div>
+              <div class="search-field">
+                <label for="searchCheckin">Check-in</label>
+                <input type="date" id="searchCheckin">
+              </div>
+              <div class="search-field">
+                <label for="searchCheckout">Check-out</label>
+                <input type="date" id="searchCheckout">
+              </div>
+              <div class="search-field">
+                <label for="searchGuests">Guests</label>
+                <select id="searchGuests">
+                  <option value="">Any</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="6">6+ guests</option>
+                </select>
+              </div>
+              <button type="submit" class="search-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Search
+              </button>
+            </div>
+          </form>
+
+          <div class="hero-tags">
+            <span class="tags-label">Popular:</span>
+            <span class="hero-tag" data-location="Lake Nakuru">🦩 Lake Nakuru</span>
+            <span class="hero-tag" data-location="Milimani">🏡 Milimani</span>
+            <span class="hero-tag" data-location="Naivasha">🌿 Naivasha</span>
+            <span class="hero-tag" data-location="CBD">🏙️ CBD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-inner">
+          <div class="stat-item">
+            <div class="stat-number" data-target="320" data-suffix="+">0</div>
+            <div class="stat-label">BnB Listings</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="4800" data-suffix="+">0</div>
+            <div class="stat-label">Happy Guests</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="18">0</div>
+            <div class="stat-label">Locations</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="98" data-suffix="%">0</div>
+            <div class="stat-label">Guest Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED LISTINGS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Top Picks</span>
+          <h2 class="section-title">Featured BnB Stays</h2>
+          <p class="section-subtitle">Hand-selected properties loved by our guests, offering exceptional comfort and value.</p>
+        </div>
+        <div class="listings-grid" id="featuredListings"></div>
+        <div class="section-action">
+          <a href="#" class="btn btn-outline btn-lg">View All Listings →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Explore</span>
+          <h2 class="section-title">Top Destinations</h2>
+          <p class="section-subtitle">From serene lakesides to vibrant town centres — find your ideal backdrop.</p>
+        </div>
+        <div class="destinations-grid">
+          <a href="#" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Lake Nakuru">
+            <div class="destination-overlay"></div>
+            <div class="destination-info"><div class="destination-name">Lake Nakuru</div><div class="destination-count">42 properties</div></div>
+          </a>
+          <a href="#" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80" alt="Naivasha">
+            <div class="destination-overlay"></div>
+            <div class="destination-info"><div class="destination-name">Naivasha</div><div class="destination-count">38 properties</div></div>
+          </a>
+          <a href="#" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=600&q=80" alt="Milimani">
+            <div class="destination-overlay"></div>
+            <div class="destination-info"><div class="destination-name">Milimani</div><div class="destination-count">56 properties</div></div>
+          </a>
+          <a href="#" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80" alt="Nakuru CBD">
+            <div class="destination-overlay"></div>
+            <div class="destination-info"><div class="destination-name">Nakuru CBD</div><div class="destination-count">29 properties</div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Simple Process</span>
+          <h2 class="section-title">How NakuruNest Works</h2>
+          <p class="section-subtitle">Finding and booking your perfect BnB is straightforward and secure.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-icon">🔍</div>
+            <div class="step-num">Step 01</div>
+            <h3>Search &amp; Discover</h3>
+            <p>Browse hundreds of verified BnB listings. Filter by location, price, amenities, and duration to find your ideal stay.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-icon">📋</div>
+            <div class="step-num">Step 02</div>
+            <h3>Choose &amp; Book</h3>
+            <p>View detailed photos, read genuine reviews, compare pricing for nightly, weekly, monthly, or yearly stays, then book securely.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-icon">🏡</div>
+            <div class="step-num">Step 03</div>
+            <h3>Arrive &amp; Enjoy</h3>
+            <p>Check in with ease. Your host is ready to welcome you. Enjoy a comfortable, home-like experience at your chosen BnB.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NAKURUNEST -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title">The NakuruNest Advantage</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">✅</div>
+            <h4>Verified Properties</h4>
+            <p>Every listing is personally inspected and verified by our team before going live.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <h4>Secure Booking</h4>
+            <p>Your payments and personal data are protected with bank-level encryption.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💬</div>
+            <h4>24/7 Support</h4>
+            <p>Our local support team is always available to assist guests and hosts alike.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <h4>Best Price Promise</h4>
+            <p>Find a lower rate elsewhere? We'll match it. Guaranteed best prices on every booking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label light">Reviews</span>
+          <h2 class="section-title light">What Our Guests Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Absolutely wonderful experience. The Lakeview Villa exceeded every expectation — stunning views, immaculate rooms, and a host who made us feel right at home."</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="https://picsum.photos/seed/rev1/80/80" alt="Sarah M.">
+              <div><div class="author-name">Sarah Mwangi</div><div class="author-role">Nairobi · Family traveller</div></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"NakuruNest made finding monthly accommodation so easy. The monthly pricing saved us a lot compared to hotel rates. We'll definitely be back."</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="https://picsum.photos/seed/rev2/80/80" alt="James K.">
+              <div><div class="author-name">James Kamau</div><div class="author-role">Eldoret · Business traveller</div></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Listed my BnB here three months ago and bookings have been consistent. The commission is fair and the platform is easy to manage. Highly recommend for hosts!"</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="https://picsum.photos/seed/rev3/80/80" alt="Grace W.">
+              <div><div class="author-name">Grace Wanjiku</div><div class="author-role">Nakuru · BnB Host</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2>Own a BnB? Start Earning Today</h2>
+          <p>Join hundreds of hosts on NakuruNest. List your property for free and reach thousands of travellers looking for their perfect stay.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-white btn-lg">List Your Property →</a>
+          <a href="#" class="btn btn-outline-white btn-lg">Learn How It Works</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light"><span class="logo-mark">🏡</span> NakuruNest</a>
+          <p>Kenya's premier platform for discovering and booking exceptional Bed &amp; Breakfast stays across Nakuru and the Rift Valley region.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>For Guests</h4><ul><li><a href="#">Browse Listings</a></li><li><a href="#">Villas</a></li><li><a href="#">Apartments</a></li><li><a href="#">Cottages</a></li><li><a href="#">Create Account</a></li></ul></div>
+        <div class="footer-col"><h4>For Hosts</h4><ul><li><a href="#">List Your BnB</a></li><li><a href="#">Commission Info</a></li><li><a href="#">How It Works</a></li><li><a href="#">Host Support</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NakuruNest. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/listings-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St Francis Girls Suwerwa — On Earth We Rise!</title>
+  <link rel="stylesheet" href="high.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="social-icons">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="contact-info">
+    <span><i class="fas fa-phone"></i> +254 725 777 449</span>
+    <span><i class="fas fa-envelope"></i> info@sfgsuwerwa.sc.ke</span>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="main-header" id="mainHeader">
+  <div class="logo">
+    <div class="logo-placeholder">SFG</div>
+    <div class="logo-text">
+      <h2>ST FRANCIS GIRLS</h2>
+      <span class="logo-sub">SUWERWA &mdash; KITALE</span>
+    </div>
+  </div>
+  <div class="header-right">
+    <a href="tel:+254725777449" class="header-phone-link">
+      <i class="fas fa-phone"></i> +254 725 777 449
+    </a>
+    <div class="header-icons">
+      <i class="fas fa-search" id="searchBtn" title="Search"></i>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- DESKTOP NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <ul class="nav-menu">
+      <li class="active"><a href="highhome.html">Home</a></li>
+
+      <li class="has-dropdown">
+        <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#">Our Profile</a></li>
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Vision, Mission &amp; Values</a></li>
+          <li><a href="#">School Administration</a></li>
+          <li><a href="#">School Policies</a></li>
+          <li><a href="#">School Anthem</a></li>
+          <li><a href="#">News &amp; Events</a></li>
+          <li><a href="#">Notice Board</a></li>
+          <li><a href="#">Games &amp; Sports</a></li>
+          <li><a href="#">Clubs &amp; Societies</a></li>
+          <li><a href="#">Notable Alumni</a></li>
+          <li><a href="#">KCSE Results</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dropdown">
+        <a href="#">Admission <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Admission Criteria</a></li>
+          <li><a href="#">Term Dates</a></li>
+          <li><a href="#">Fee Payment</a></li>
+          <li><a href="#">How to Apply</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="nav-phone"><i class="fas fa-phone"></i> +254 725 777 449</div>
+  </div>
+</nav>
+
+<!-- STICKY HEADER -->
+<div class="sticky-header" id="stickyHeader">
+  <div class="sticky-logo">
+    <div class="logo-placeholder small">SFG</div>
+    <span>SFG SUWERWA</span>
+  </div>
+  <ul class="nav-menu">
+    <li class="active"><a href="highhome.html">Home</a></li>
+    <li class="has-dropdown">
+      <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">Our Profile</a></li>
+        <li><a href="#">Our History</a></li>
+        <li><a href="#">Vision, Mission &amp; Values</a></li>
+        <li><a href="#">School Administration</a></li>
+        <li><a href="#">News &amp; Events</a></li>
+        <li><a href="#">KCSE Results</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Admission <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown">
+        <li><a href="#">How to Apply</a></li>
+        <li><a href="#">Term Dates</a></li>
+        <li><a href="#">Fee Payment</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <div class="nav-phone"><i class="fas fa-phone"></i> +254 725 777 449</div>
+</div>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE NAV DRAWER -->
+<nav class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <span>SFG SUWERWA</span>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#10005;</button>
+  </div>
+  <ul>
+    <li><a href="highhome.html">Home</a></li>
+    <li><a href="#" class="mobile-section">About Us</a></li>
+    <li><a href="#" class="mobile-sub">Our Profile</a></li>
+    <li><a href="#" class="mobile-sub">Our History</a></li>
+    <li><a href="#" class="mobile-sub">Vision, Mission &amp; Values</a></li>
+    <li><a href="#" class="mobile-sub">School Administration</a></li>
+    <li><a href="#" class="mobile-sub">News &amp; Events</a></li>
+    <li><a href="#" class="mobile-sub">KCSE Results</a></li>
+    <li><a href="#" class="mobile-section">Admission</a></li>
+    <li><a href="#" class="mobile-sub">How to Apply</a></li>
+    <li><a href="#" class="mobile-sub">Term Dates</a></li>
+    <li><a href="#" class="mobile-sub">Fee Payment</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SLIDESHOW -->
+<section class="hero-slider" id="heroSlider">
+  <div class="slide active">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="eyebrow fade-up">Welcome to SFG SUWERWA</p>
+      <h1 class="fade-up delay-1">On Earth<br><span>We Rise!</span></h1>
+      <p class="fade-up delay-2">A private secondary school providing holistic Christian-based quality education for the service of God and mankind.</p>
+      <div class="slide-btns fade-up delay-3">
+        <a href="#about" class="btn-gold">Learn More</a>
+        <a href="#admission" class="btn-outline-hero">Apply Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="eyebrow">Our Vision</p>
+      <h1>A Christian School<br><span>of Choice</span></h1>
+      <p>We strive to be the premier institution anchoring all endeavors on the fear of the Lord and enduring Christian values.</p>
+      <div class="slide-btns">
+        <a href="#vmv" class="btn-gold">Our Vision</a>
+        <a href="#contact" class="btn-outline-hero">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80')"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="eyebrow">Academic Excellence</p>
+      <h1>Shaping <span>Future</span><br>Leaders</h1>
+      <p>Consistently top-performing in KCSE, our rigorous academic programme prepares students for success in higher education and beyond.</p>
+      <div class="slide-btns">
+        <a href="#" class="btn-gold">KCSE Results</a>
+        <a href="#" class="btn-outline-hero">Gallery</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+  <button class="slider-arrow next" id="nextSlide" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+
+  <div class="slider-nav">
+    <span class="slider-dot active" data-slide="0"></span>
+    <span class="slider-dot" data-slide="1"></span>
+    <span class="slider-dot" data-slide="2"></span>
+  </div>
+</section>
+
+<!-- VISION / MISSION / VALUES -->
+<section class="vmv-strip" id="vmv">
+  <div class="vmv-inner">
+    <p class="section-label">Our Foundation</p>
+    <h2>Vision, Mission &amp; Core Values</h2>
+    <div class="vmv-grid">
+      <div class="vmv-card">
+        <div class="vmv-icon"><i class="fas fa-eye"></i></div>
+        <h3>Our Vision</h3>
+        <p>To be a Christian School of Choice — a beacon of academic and moral excellence in Kenya and beyond.</p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+      <div class="vmv-card center-card">
+        <div class="vmv-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To provide holistic educational services in a learner-centered, Christian set-up guided by commitment, fairness and integrity.</p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+      <div class="vmv-card">
+        <div class="vmv-icon"><i class="fas fa-star"></i></div>
+        <h3>Core Values</h3>
+        <p><strong>Commitment</strong> — to excellence in all we do.<br><strong>Fairness</strong> — treating all with dignity.<br><strong>Integrity</strong> — honesty and accountability always.</p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTTO BANNER -->
+<div class="motto-banner">
+  <div class="motto-inner">
+    <h3>Our Motto</h3>
+    <h2>On Earth We Rise!</h2>
+    <p>One of Kenya's most prestigious girls' schools, recognised for sustained academic excellence and holistic development of students.</p>
+    <a href="#" class="btn-gold">Contact Us Today</a>
+  </div>
+</div>
+
+<!-- ABOUT + APPLICATIONS -->
+<section class="about-section" id="about">
+  <div class="about-text">
+    <p class="section-label">Who We Are</p>
+    <h2>Welcome to St Francis Girls Suwerwa</h2>
+    <p>St Francis Girls' School Suwerwa is a top-performing secondary school located in Kitale, Trans Nzoia County, Kenya. The school is well-known for its academic and co-curricular excellence, offering a vibrant, stimulating learning environment that prioritises the holistic development of students.</p>
+    <p>The school provides a rigorous academic programme that prepares students for success in higher education and beyond, with highly qualified teaching staff who use modern techniques to make learning engaging, interactive, and memorable.</p>
+    <p>With a well-established library, equipped classrooms, and modern facilities, students at SFG Suwerwa are assured of quality learning experiences rooted in Christian values.</p>
+    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="applications-col">
+    <div class="applications-box" id="admission">
+      <span class="app-badge">Now Open</span>
+      <h3>Applications Invited</h3>
+      <p>Admissions for the upcoming academic year are now open. Join Kenya's premier Christian secondary school and unlock your full potential.</p>
+      <a href="#" class="btn-gold btn-apply">How to Apply</a>
+      <div class="app-links">
+        <div class="app-list-item"><i class="fas fa-calendar"></i> View Term Dates</div>
+        <div class="app-list-item"><i class="fas fa-money-bill"></i> Fee Payment Info</div>
+        <div class="app-list-item"><i class="fas fa-check-circle"></i> Admission Criteria</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICE BOARD -->
+<section class="notice-section">
+  <div class="notice-inner">
+    <p class="section-label">Latest Updates</p>
+    <h2>School Notice Board</h2>
+    <div class="notice-grid">
+      <div class="notice-card">
+        <div class="notice-img">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&q=80" alt="School Activities">
+        </div>
+        <div class="notice-body">
+          <p class="notice-date"><i class="fas fa-calendar-alt"></i> 04 December 2025</p>
+          <h3>SFG Suwerwa School News</h3>
+          <p>Our mission: to provide holistic educational services in a learner-centred, Christian environment guided by excellence in all undertakings.</p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="notice-card">
+        <div class="notice-img">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80" alt="Term Dates">
+        </div>
+        <div class="notice-body">
+          <p class="notice-date"><i class="fas fa-calendar-alt"></i> 04 June 2025</p>
+          <h3>2025 Term Dates</h3>
+          <p>The 2025 academic year calendar is now available. Opening date for the first term was 6th January 2025.</p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="notice-card">
+        <div class="notice-img notice-img-icon">
+          <i class="fas fa-newspaper"></i>
+        </div>
+        <div class="notice-body">
+          <p class="notice-date"><i class="fas fa-calendar-alt"></i> 2026</p>
+          <h3>School Magazine 2026</h3>
+          <p>The latest edition of the SFG Suwerwa school magazine is now available for download from the school office.</p>
+          <a href="#">Download PDF <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="center-link">
+      <a href="#" class="btn-outline-dark">View All Notices</a>
+    </div>
+  </div>
+</section>
+
+<!-- EMBODIMENT OF HOPE -->
+<section class="embodiment">
+  <div class="embodiment-img">
+    <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=700&q=80" alt="Students at SFG">
+    <div class="embodiment-overlay">
+      <i class="fas fa-cross"></i>
+    </div>
+  </div>
+  <div class="embodiment-content">
+    <p class="section-label">Our Foundation</p>
+    <h2>Embodiment of <span>Hope</span></h2>
+    <p>St Francis Girls Suwerwa anchors all its endeavors on the fear of the Lord and Christian values. The Board of Directors, school administration, staff, students and all stakeholders put God first in their day-to-day activities.</p>
+    <p>The exceptionally outstanding performance that the school has posted for years on end can be attributed to committed, highly-trained staff, as well as disciplined and focused students. We give glory and honour to God Almighty for this achievement.</p>
+    <a href="#" class="btn-gold">Learn More</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><h3>50+</h3><p>Years of Excellence</p></div>
+  <div class="stat"><h3>A</h3><p>KCSE Mean Grade</p></div>
+  <div class="stat"><h3>40+</h3><p>Clubs &amp; Societies</p></div>
+  <div class="stat"><h3>100%</h3><p>Christian Values</p></div>
+</div>
+
+<!-- PARTNERS -->
+<section class="partners">
+  <div class="partners-inner">
+    <p class="section-label">Our Community</p>
+    <h2>Partner Institutions</h2>
+    <div class="partner-logos">
+      <div class="partner-logo">SFG<br>Suwerwa</div>
+      <div class="partner-logo">Trans Nzoia<br>County</div>
+      <div class="partner-logo">Ministry of<br>Education</div>
+      <div class="partner-logo">Kitale<br>Diocese</div>
+      <div class="partner-logo">St Francis<br>Community</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <div class="logo-placeholder footer-logo">SFG</div>
+        <div>
+          <div class="footer-title">ST FRANCIS GIRLS</div>
+          <div class="footer-sub">SUWERWA — KITALE</div>
+        </div>
+      </div>
+      <p>A private secondary school providing holistic Christian-based quality education for the service of God and mankind. On Earth We Rise!</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>About SFG</h4>
+      <ul>
+        <li><a href="#">Our Profile</a></li>
+        <li><a href="#">Our History</a></li>
+        <li><a href="#">Mission, Vision &amp; Values</a></li>
+        <li><a href="#">School Administration</a></li>
+        <li><a href="#">School Policies</a></li>
+        <li><a href="#">School Anthem</a></li>
+        <li><a href="#">Notable Alumni</a></li>
+        <li><a href="#">KCSE Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visitors</h4>
+      <ul>
+        <li><a href="#">Admission Overview</a></li>
+        <li><a href="#">Admission Criteria</a></li>
+        <li><a href="#">Term Dates</a></li>
+        <li><a href="#">Fee Payment</a></li>
+        <li><a href="#">How To Apply</a></li>
+        <li><a href="#">News &amp; Events</a></li>
+        <li><a href="#">Notice Board</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Suwerwa, Kitale, Trans Nzoia County, Kenya</span></div>
+      <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+254725777449">+254 725 777 449</a></div>
+      <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@sfgsuwerwa.sc.ke">info@sfgsuwerwa.sc.ke</a></div>
+      <div class="footer-apply">
+        <a href="#" class="btn-gold">Apply Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 St Francis Girls Suwerwa &mdash; Kitale. All Rights Reserved.
+    <span class="footer-sep">|</span>
+    <a href="highhome.html">sfgsuwerwa.sc.ke</a>
+  </div>
+</footer>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-inner">
+    <button class="search-close" id="searchClose" aria-label="Close search">&#10005;</button>
+    <h3>Search SFG Suwerwa</h3>
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search the website...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</div>
+
+<script src="high.js"></script>
+</body>
+</html>

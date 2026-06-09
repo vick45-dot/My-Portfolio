@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nakuru KMTC — Kenya Medical Training College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fas fa-map-marker-alt"></i> Crescent Road, Milimani Estate, Nakuru</span>
+        <span><i class="fas fa-phone"></i> 051-2211905</span>
+        <span><i class="fas fa-envelope"></i> nakuru@kmtc.ac.ke</span>
+      </div>
+      <div class="topbar-right">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="btn-portal">Student Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-emblem">
+          <div class="logo-cross"><span></span><span></span></div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">NAKURU KMTC</span>
+          <span class="logo-sub">Kenya Medical Training College</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#about" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#about">Overview</a></li>
+              <li><a href="#mission">Mission &amp; Vision</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#programs" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#programs">All Programs</a></li>
+              <li><a href="#programs">Diploma Courses</a></li>
+              <li><a href="#programs">Certificate Courses</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#admissions" class="nav-link">Admissions <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#admissions">How to Apply</a></li>
+              <li><a href="#admissions">Entry Requirements</a></li>
+              <li><a href="#admissions">Fees Structure</a></li>
+            </ul>
+          </li>
+          <li><a href="#campus" class="nav-link">Campus Life</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1551076805-e1869033e561?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-star"></i> Established 1973 &middot; Nakuru County</span>
+      <h1 class="hero-title">Training Tomorrow's<br /><span>Healthcare Heroes</span></h1>
+      <p class="hero-desc">
+        Nakuru KMTC is one of Kenya's premier medical training institutions,
+        offering world-class diploma and certificate programmes in health sciences
+        on a 52-acre campus shared with Nakuru County Teaching &amp; Referral Hospital.
+      </p>
+      <div class="hero-actions">
+        <a href="#admissions" class="btn btn-primary"><i class="fas fa-graduation-cap"></i> Apply Now</a>
+        <a href="#programs" class="btn btn-outline">Explore Programs</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <i class="fas fa-user-graduate"></i>
+        <span class="stat-num" data-target="5000">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Students Enrolled</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-book-medical"></i>
+        <span class="stat-num" data-target="12">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Health Programmes</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-calendar-alt"></i>
+        <span class="stat-num" data-target="52">0</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-hospital"></i>
+        <span class="stat-num" data-target="52">0</span>
+        <span class="stat-label">Acre Campus</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=700&q=80" alt="KMTC Nakuru campus" />
+        <div class="about-badge">
+          <i class="fas fa-award"></i>
+          <div>
+            <strong>Accredited</strong>
+            <span>Ministry of Health</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">About Nakuru KMTC</span>
+        <h2 class="section-title">Shaping Kenya's Healthcare Workforce Since 1973</h2>
+        <p>
+          Kenya Medical Training College (KMTC) Nakuru Campus is one of the 71 KMTC colleges
+          across Kenya. Nestled within Milimani Estate, the college has grown into a leading
+          medical training hub producing skilled, compassionate healthcare professionals who
+          serve communities across the country and beyond.
+        </p>
+        <p>
+          The campus's co-location with <strong>Nakuru County Teaching and Referral Hospital</strong>
+          offers students unmatched hands-on clinical exposure, bridging the gap between theory
+          and real-world medical practice from day one.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item"><i class="fas fa-check-circle"></i><span>52-acre shared campus with county referral hospital</span></div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Two intakes per year — March and September</span></div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Online application through kmtc.ac.ke</span></div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i><span>State-of-the-art laboratories and simulation centres</span></div>
+        </div>
+        <a href="#admissions" class="btn btn-primary">Learn More About Admissions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission section" id="mission">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Our Foundation</span>
+        <h2 class="section-title">Mission, Vision &amp; Core Values</h2>
+      </div>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Mission</h3>
+          <p>To train competent, ethical and dedicated health professionals through innovative education, research and community engagement for improved health outcomes in Kenya and beyond.</p>
+        </div>
+        <div class="mv-card featured">
+          <div class="mv-icon"><i class="fas fa-eye"></i></div>
+          <h3>Vision</h3>
+          <p>To be a centre of excellence in medical training and healthcare education, producing world-class health professionals who transform communities.</p>
+        </div>
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-heart"></i></div>
+          <h3>Core Values</h3>
+          <ul>
+            <li><i class="fas fa-angle-right"></i> Integrity &amp; Professionalism</li>
+            <li><i class="fas fa-angle-right"></i> Patient-Centred Care</li>
+            <li><i class="fas fa-angle-right"></i> Excellence in Training</li>
+            <li><i class="fas fa-angle-right"></i> Innovation &amp; Research</li>
+            <li><i class="fas fa-angle-right"></i> Community Service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Academic Programmes</span>
+        <h2 class="section-title">Health Courses Offered at Nakuru KMTC</h2>
+        <p class="section-desc">Choose from a wide range of diploma and certificate programmes in health sciences, each designed to equip you with clinical skills and theoretical knowledge.</p>
+      </div>
+      <div class="programs-tabs">
+        <button class="tab-btn active" data-tab="diploma">Diploma Programmes</button>
+        <button class="tab-btn" data-tab="certificate">Certificate Programmes</button>
+      </div>
+      <div class="tab-content active" id="diploma">
+        <div class="programs-grid">
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-stethoscope"></i></div><h3>Clinical Medicine &amp; Surgery</h3><p>Train to become a clinical officer providing primary healthcare, diagnosis, and treatment services.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-user-nurse"></i></div><h3>Nursing</h3><p>Comprehensive training in patient care, health promotion, disease prevention and rehabilitation nursing.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-flask"></i></div><h3>Medical Laboratory Sciences</h3><p>Learn diagnostic techniques, laboratory procedures, and pathological analysis for clinical decision-making.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-leaf"></i></div><h3>Environmental Health Science</h3><p>Study public health, sanitation, disease surveillance and environmental factors affecting community health.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-pills"></i></div><h3>Pharmacy</h3><p>Gain expertise in pharmaceutical sciences, drug dispensing, patient counselling and pharmacy management.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-apple-alt"></i></div><h3>Nutrition &amp; Dietetics</h3><p>Study therapeutic nutrition, dietary counselling, food science and community nutrition programmes.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-walking"></i></div><h3>Physiotherapy</h3><p>Train in physical rehabilitation, movement therapy and restoring function to patients with disabilities.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-x-ray"></i></div><h3>Medical Imaging Sciences</h3><p>Learn radiology, ultrasound imaging, and diagnostic medical imaging technologies and techniques.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-database"></i></div><h3>Health Records &amp; Information</h3><p>Specialise in healthcare data management, medical records systems, and health informatics.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 3 Years</span><span><i class="fas fa-certificate"></i> Diploma</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="tab-content" id="certificate">
+        <div class="programs-grid">
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-heartbeat"></i></div><h3>Community Health</h3><p>Train as a community health worker to deliver preventive and promotive healthcare at the grassroots level.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 2 Years</span><span><i class="fas fa-certificate"></i> Certificate</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-tooth"></i></div><h3>Dental Technology</h3><p>Learn dental prosthetics, orthodontics, and laboratory procedures for fabricating dental appliances.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 2 Years</span><span><i class="fas fa-certificate"></i> Certificate</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+          <div class="prog-card"><div class="prog-icon"><i class="fas fa-eye"></i></div><h3>Orthopaedic Technology</h3><p>Study bone, joint and musculoskeletal care, including casting, traction, and orthopaedic techniques.</p><div class="prog-meta"><span><i class="fas fa-clock"></i> 2 Years</span><span><i class="fas fa-certificate"></i> Certificate</span></div><a href="#admissions" class="prog-link">Apply Now <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS SECTION -->
+  <section class="admissions section" id="admissions">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title">Admissions at Nakuru KMTC</h2>
+      </div>
+      <div class="admissions-grid">
+        <div class="adm-steps">
+          <h3><i class="fas fa-list-ol"></i> How to Apply</h3>
+          <div class="steps">
+            <div class="step"><div class="step-num">1</div><div class="step-info"><strong>Visit KMTC Website</strong><p>Go to kmtc.ac.ke and navigate to the online application portal.</p></div></div>
+            <div class="step"><div class="step-num">2</div><div class="step-info"><strong>Create an Account</strong><p>Register with your KCSE index number and personal details.</p></div></div>
+            <div class="step"><div class="step-num">3</div><div class="step-info"><strong>Select Programme</strong><p>Choose Nakuru Campus and your preferred health programme.</p></div></div>
+            <div class="step"><div class="step-num">4</div><div class="step-info"><strong>Submit Documents</strong><p>Upload KCSE certificate, ID/birth certificate, and passport photo.</p></div></div>
+            <div class="step"><div class="step-num">5</div><div class="step-info"><strong>Await Placement</strong><p>Check the portal for your selection and reporting instructions.</p></div></div>
+          </div>
+        </div>
+        <div class="adm-info">
+          <div class="adm-card">
+            <h3><i class="fas fa-calendar"></i> Intake Dates</h3>
+            <div class="intake-row"><span>March Intake</span><strong>Applications: Nov — Jan</strong></div>
+            <div class="intake-row"><span>September Intake</span><strong>Applications: May — Jul</strong></div>
+          </div>
+          <div class="adm-card">
+            <h3><i class="fas fa-graduation-cap"></i> Entry Requirements</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Kenya Certificate of Secondary Education (KCSE)</li>
+              <li><i class="fas fa-check"></i> Minimum mean grade of C (plain) for diploma programmes</li>
+              <li><i class="fas fa-check"></i> Strong grades in Biology, Chemistry and English</li>
+              <li><i class="fas fa-check"></i> Certificate of Good Conduct</li>
+              <li><i class="fas fa-check"></i> Medical fitness certificate</li>
+            </ul>
+          </div>
+          <div class="adm-card">
+            <h3><i class="fas fa-money-bill-wave"></i> Fees Overview</h3>
+            <p>Tuition fees are government-subsidised. Students may apply for HELB loans and bursaries.</p>
+            <a href="https://kmtc.ac.ke" class="btn btn-primary" target="_blank" rel="noopener">Apply Online at KMTC.ac.ke</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us section" id="campus">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Why Nakuru KMTC</span>
+        <h2 class="section-title">Your Best Choice for Medical Training</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-icon"><i class="fas fa-hospital-alt"></i></div><h3>Clinical Hospital Attachment</h3><p>Campus shares grounds with Nakuru County Teaching &amp; Referral Hospital for daily clinical practice.</p></div>
+        <div class="why-card"><div class="why-icon"><i class="fas fa-microscope"></i></div><h3>Modern Laboratories</h3><p>State-of-the-art science and simulation labs equipped with the latest medical technology and equipment.</p></div>
+        <div class="why-card"><div class="why-icon"><i class="fas fa-users"></i></div><h3>Expert Faculty</h3><p>Learn from experienced, qualified medical practitioners and educators dedicated to student success.</p></div>
+        <div class="why-card"><div class="why-icon"><i class="fas fa-globe-africa"></i></div><h3>National Recognition</h3><p>Graduates are recognised by Kenya's Ministry of Health and professional regulatory bodies nationwide.</p></div>
+        <div class="why-card"><div class="why-icon"><i class="fas fa-home"></i></div><h3>Student Accommodation</h3><p>Affordable on-campus hostel facilities within a secure and supportive learning environment.</p></div>
+        <div class="why-card"><div class="why-icon"><i class="fas fa-briefcase-medical"></i></div><h3>High Graduate Employability</h3><p>KMTC-trained health workers are highly sought after in public and private hospitals across Kenya.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="news section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Latest Updates</span>
+          <h2 class="section-title">News &amp; Announcements</h2>
+        </div>
+        <a href="#news" class="btn btn-outline-dark">View All News</a>
+      </div>
+      <div class="news-grid">
+        <div class="news-card featured-news">
+          <div class="news-img"><img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=80" alt="KMTC News" /><span class="news-cat">Admissions</span></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> May 2026</span>
+            <h3>September 2026 Intake Applications Now Open</h3>
+            <p>Nakuru KMTC is now accepting applications for the September 2026 intake. Prospective students are encouraged to apply early through the KMTC online portal at kmtc.ac.ke before the deadline.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=80" alt="Graduation" /><span class="news-cat">Events</span></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> April 2026</span>
+            <h3>Annual Graduation Celebrates 320 New Health Professionals</h3>
+            <p>Nakuru KMTC celebrated yet another milestone as 320 graduates received their diplomas and certificates.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Research" /><span class="news-cat">Research</span></div>
+          <div class="news-body">
+            <span class="news-date"><i class="fas fa-calendar"></i> March 2026</span>
+            <h3>Students Conduct Community Health Outreach in Nakuru</h3>
+            <p>Third-year students carried out a health outreach programme providing free screenings and health education to residents of Bondeni and Kivumbini.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Nakuru KMTC</h2>
+        <div class="contact-items">
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Physical Address</strong><p>Crescent Road, Milimani Estate<br/>Nakuru, Kenya</p></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><p><a href="mailto:nakuru@kmtc.ac.ke">nakuru@kmtc.ac.ke</a></p></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-phone"></i></div><div><strong>Phone</strong><p>051-2211905 / 051-2211843</p></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-mail-bulk"></i></div><div><strong>Postal Address</strong><p>P.O. Box 110 - 20100<br/>Nakuru, Kenya</p></div></div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="John" required /></div>
+          <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Doe" required /></div>
+        </div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="johndoe@email.com" required /></div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">Select a subject</option>
+            <option>Admissions Inquiry</option>
+            <option>Programme Information</option>
+            <option>Fees &amp; Scholarships</option>
+            <option>Campus Life</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Write your message here..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Message sent successfully! We will get back to you shortly.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="logo footer-logo">
+            <div class="logo-emblem light"><div class="logo-cross"><span></span><span></span></div></div>
+            <div class="logo-text"><span class="logo-title">NAKURU KMTC</span><span class="logo-sub">Kenya Medical Training College</span></div>
+          </div>
+          <p>Producing competent and ethical healthcare professionals for Kenya and beyond since 1973.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#home"><i class="fas fa-angle-right"></i> Home</a></li><li><a href="#about"><i class="fas fa-angle-right"></i> About Us</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Programmes</a></li><li><a href="#admissions"><i class="fas fa-angle-right"></i> Admissions</a></li><li><a href="#campus"><i class="fas fa-angle-right"></i> Campus Life</a></li><li><a href="#news"><i class="fas fa-angle-right"></i> News</a></li></ul></div>
+        <div class="footer-col"><h4>Health Programmes</h4><ul><li><a href="#programs"><i class="fas fa-angle-right"></i> Clinical Medicine</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Nursing</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Pharmacy</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Medical Laboratory</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Physiotherapy</a></li><li><a href="#programs"><i class="fas fa-angle-right"></i> Medical Imaging</a></li></ul></div>
+        <div class="footer-col"><h4>Student Resources</h4><ul><li><a href="#"><i class="fas fa-angle-right"></i> Student Portal</a></li><li><a href="#"><i class="fas fa-angle-right"></i> Library Access</a></li><li><a href="#"><i class="fas fa-angle-right"></i> HELB Loans</a></li><li><a href="#"><i class="fas fa-angle-right"></i> Results &amp; Transcripts</a></li><li><a href="#"><i class="fas fa-angle-right"></i> Student Welfare</a></li><li><a href="#contact"><i class="fas fa-angle-right"></i> Contact Us</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Crescent Road, Milimani Estate, Nakuru</span></div><div class="footer-contact-item"><i class="fas fa-phone"></i><span>051-2211905</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>nakuru@kmtc.ac.ke</span></div><div class="footer-contact-item"><i class="fas fa-mail-bulk"></i><span>P.O. Box 110-20100, Nakuru</span></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Kenya Medical Training College — Nakuru Campus. All rights reserved.</p>
+        <p>Under the <strong>Ministry of Health, Kenya</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
