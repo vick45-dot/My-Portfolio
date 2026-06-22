@@ -1,3 +1,21 @@
+/* ===== DARK / LIGHT MODE TOGGLE ===== */
+(function () {
+  const btn  = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const isLight = html.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      html.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+})();
+
 /* ===== SCROLL TO TOP ON REFRESH ===== */
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 window.addEventListener('beforeunload', () => window.scrollTo(0, 0));
